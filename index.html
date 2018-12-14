@@ -1,0 +1,155 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+	<meta charset="utf-8">
+	<meta name="viewpoint" content="width=device-width, initial scale=1.0">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<link rel="icon" type="image/png" href="img/afritech-favicon.png">
+<title>Home | Muelziland</title>
+<!-- TemplateEndEditable -->
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+</head>
+
+<body> 
+    <div class="navigation-bar">
+        <div id="navigation-container">
+            <img src="img/new-muelziland-logo2.png"> 
+
+<!--Navbar-->
+		<div class="topnav">
+			<a class= "active" href="index.html">Home</a>
+			<a href="Pricing.html">Pricing</a>
+			<a href="About.html">About Us</a>
+			<a href="Contact.html">Get in Touch</a>
+			<a href="javascript.void(0);" class="onclick="myFunction()>&#9776;</a>
+		</div>
+		</div>
+	</div>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="img/socialmedia.png" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="img/paint2.png" style="width:100%">
+ </div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="img/girlphone.png" style="width:100%">
+ </div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+<div class="hero-image">
+    <div class="hero-text">
+      <h1><center>Welcome to our Website</center></h1>
+     </div>
+  </div>
+
+	<!--Header with image-->
+	
+	<div class="row">
+		<!--We are adding images here-->
+		<!--add three images-->
+		<br>
+		<h2><center>CHECKOUT OUR OFFERS</center></h2>
+		<div class="column">
+		<img src="img/chattingpeople.jpg" alt="Engaging your Audience" border="5" style="width:500px;height:350px;">
+		<h3>Client Engagement</h3>
+	</div>
+	<div class="column">
+		<img src="img/customer.jpg" alt="Customer Satisfaction"border="5" style="width:500px;height:350px;">
+		<h3>Responsive Web Designing</h3>
+	</div>
+
+	<div class="column">
+		<img src="img/photographer-3672010_1280.jpg" alt="Web Designing" border="5" style="width:500px;height:350px;">
+		<h3>Photography</h3>
+	</div>
+
+	<br>
+	<section>
+		
+	</section>
+
+	<footer>
+		<a href="https://facebook.com/techjarablog" target="_blank">
+			<img src="img/facebook.png" title="Facebook" height="75" width="75">
+		</a>
+		<a href="https://instagram.com/techjara_official" target="_blank"> || 
+			<img src="img/instagram.png" title="Instagram" height="75" width="75">  ||
+		</a>
+		<a href="https://twitter.com/techjara" target="_blank">
+			<img src="img/twitter.png" title="Twitter" height="75" width="75">
+		</a>
+		<p>&copy 2018 Circles Blocks Tech Arcade. Developed by Edet Sam</p>
+		<p>
+			<a href="https://muelziland.com/privacy">Privacy Policy</a>
+
+			<a href="https://muelziland.com/disclaimer">Disclaimer</a>
+
+			<a href="https://muelziland.com/terms">Terms</a>
+
+		</p>
+	</footer>
+</body>
+<script>
+	function myFunction() {
+		var x = document.getElementById("myTopnav");
+		if (x.className === "topnav") {
+			x.className += "Responsive";
+		}
+		else {
+			x.className = "topnav";
+		}
+	}
+
+</script>
+</html>
